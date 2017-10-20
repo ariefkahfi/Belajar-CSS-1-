@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello SideNav</title>
+    <style>
+        body{
+            margin : 0;
+            padding : 0;
+        }
+
+
+        nav {
+            background-color: #4D4D4D;
+            position: fixed;
+            width: 15%;
+            height: 100%;
+            transition: width 1s;
+            color : white;
+        }
+        #close-btn{
+            padding : 1.2%;
+            float: right;
+            overflow: hidden;
+            font-size: 30px;
+        }
+        #nav-menu{
+            clear: both;
+        }
+        #nav-menu ul{
+            padding : 10%;
+        }
+        #nav-menu ul li {
+            font-size: 29px;
+            margin-bottom : 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <span id="close-btn"><a style="text-decoration: none; color : white;" href="#">X</a></span>
+
+        <div id="nav-menu">
+            <ul type="none">
+                <li>About</li>
+                <li>Services</li>
+                <li>Clients</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </nav>
+    <button id="nav-btn">Open navbar</button>
+</body>
+    <script>
+        var btnNavbar = document.getElementById('nav-btn');
+        var btnClose  = document.getElementById('close-btn');
+
+        var navbar = document.getElementsByTagName('nav')[0];
+
+        navbar.style.width = '0';
+
+
+        btnClose.onclick = function (){
+            navbar.style.width = '0';
+        }
+
+        btnNavbar.onclick = function (){
+            navbar.style.width = '15%';
+        }
+
+    </script>
+</html>

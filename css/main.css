@@ -1,0 +1,100 @@
+body{
+    margin : 0;
+    padding : 0;
+}
+nav{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top : 0;
+    left : 0;
+    color : white;
+    overflow: hidden;
+    transition:  width 1s;
+    background-color: #4D4D4D;
+}
+#close{
+    font-size: 27px;
+    padding : 1.2%;
+    float : right;
+}
+#nav-menu{
+    clear: both;
+}
+#nav-menu ul {
+    padding-left : 10px;
+    padding-right: 10px;
+}
+#nav-menu ul li{
+    padding : 1.2%;
+    margin-bottom : 10px;
+    font-size: 30px;
+}
+.box-nav{
+    background-color: dodgerblue;
+    padding : 1%;
+}
+*{
+    font-family: SansSerif,'sans-serif';
+    box-sizing: border-box;
+}
+.clearfix:after{
+    content : "";
+    display: block;
+    clear: both;
+}
+.box-nav-item{
+    text-decoration: none;
+    color : white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.box-sidebar{
+    width: 25%;
+    float: left;
+    margin-top : 10px;
+    margin-right: 10px;
+    margin-left : 10px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+}
+.box-sidebar h3{
+    background-color: dodgerblue;
+    margin : 0;
+    color : white;
+    padding : 1%;
+}
+.box-sidebar ul{
+    padding-left : 10px;
+    padding-right: 10px;
+}
+.box-sidebar ul li {
+
+}
+
+.box-main{
+    margin-top : 10px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.box-main h3{
+    color : white;
+    background-color: dodgerblue;
+    margin : 0;
+    padding : 1%;
+}
+.box-footer{
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+    margin : 1%;
+    padding : 1%;
+    background-color: dodgerblue;
+    text-align: center;
+}
+.box-footer h3{
+    color : white;
+    margin : 0;
+}
+.container{
+    min-width: 1000px;
+    transition: margin-left 1s;
+}
